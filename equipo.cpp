@@ -16,3 +16,4 @@ string Equipo::obtener_pais(){
     return pais;
 }
 
+//hola como va
