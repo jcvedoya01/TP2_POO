@@ -23,3 +23,4 @@ void Nodo::cambiar_siguiente(Nodo* puntero){
     siguiente = puntero;
 
 }
+

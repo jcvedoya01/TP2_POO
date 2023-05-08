@@ -1,12 +1,13 @@
 #ifndef RUTA_NODO_H
 #define RUTA_NODO_H
 
+#include "mundial.h"
 #include "equipo.h"
 
 using namespace std;
 
-class Nodo{
-    private:
+class Nodo : ListaMundial{
+    protected:
     Equipo equipo;
     Nodo *siguiente;
 

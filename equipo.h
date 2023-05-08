@@ -1,26 +1,27 @@
 #ifndef EQUIPO_H
 #define EQUIPO_H
-
+#include <iostream>
+#include <fstream>
+#include <vector>
 #include <string>
+#include "fase.h"
+
 using namespace std;
 
-class Equipo{
+class Equipo{ 
 
     private:
-    string pais;
+    string pais; 
     string grupo;
     int puntaje;
-    int partidos;
+    vector <Fase> vector_fases;
+    int cantidad_fases;
 
     public:
     Equipo();
     Equipo(string p, string g);
+    void alta_fase(Fase f);
     string obtener_pais();
-
+    void procesar_equipo();
 };
-
-///pre: recibe 2 parametros extraidos del archivo  .txt
-///post: crea una variable de tipo puntero a Equipo
-//Equipo* generar_equipo(string pais, string grupo);
-
 #endif
